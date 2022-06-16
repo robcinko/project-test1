@@ -10,4 +10,5 @@ export class AuthService{
    signup(){
       return {msg:"You have been signup"}
    }
+   
 }
