@@ -1,8 +1,11 @@
+import { PrismaService } from "src/prisma/prisma.service";
 export declare class AuthService {
-    signin(): {
+    private prisma;
+    constructor(prisma: PrismaService);
+    signup(): {
         msg: string;
     };
-    signup(): {
+    signin(): {
         msg: string;
     };
 }

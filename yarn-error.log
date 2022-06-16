@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add @prism/client
+  /usr/local/bin/node /usr/local/bin/yarn add class-validator class-trasformer
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/opt/X11/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@prism%2fclient: Not found
+  Error: https://registry.yarnpkg.com/class-trasformer: Not found
       at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140662:22)
       at Request.emit (events.js:400:28)
@@ -53,6 +53,7 @@ npm manifest:
       "@nestjs/common": "^8.0.0",
       "@nestjs/core": "^8.0.0",
       "@nestjs/platform-express": "^8.0.0",
+      "@prisma/client": "^3.15.2",
       "reflect-metadata": "^0.1.13",
       "rimraf": "^3.0.2",
       "rxjs": "^7.2.0"
@@ -840,6 +841,18 @@ Lockfile:
       chalk "^4.1.0"
       consola "^2.15.0"
       node-fetch "^2.6.1"
+  
+  "@prisma/client@^3.15.2":
+    version "3.15.2"
+    resolved "https://registry.yarnpkg.com/@prisma/client/-/client-3.15.2.tgz#2181398147afc79bfe0d83c03a88dc45b49bd365"
+    integrity sha512-ErqtwhX12ubPhU4d++30uFY/rPcyvjk+mdifaZO5SeM21zS3t4jQrscy8+6IyB0GIYshl5ldTq6JSBo1d63i8w==
+    dependencies:
+      "@prisma/engines-version" "3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e"
+  
+  "@prisma/engines-version@3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e":
+    version "3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e"
+    resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e.tgz#bf5e2373ca68ce7556b967cb4965a7095e93fe53"
+    integrity sha512-e3k2Vd606efd1ZYy2NQKkT4C/pn31nehyLhVug6To/q8JT8FpiMrDy7zmm3KLF0L98NOQQcutaVtAPhzKhzn9w==
   
   "@prisma/engines@3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e":
     version "3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e"
@@ -3823,7 +3836,7 @@ Lockfile:
   
   prisma@^3.15.2:
     version "3.15.2"
-    resolved "https://repo.plus4u.net/operatorGate/repository/public-javascript/prisma/-/prisma-3.15.2.tgz#4ebe32fb284da3ac60c49fbc16c75e56ecf32067"
+    resolved "https://registry.yarnpkg.com/prisma/-/prisma-3.15.2.tgz#4ebe32fb284da3ac60c49fbc16c75e56ecf32067"
     integrity sha512-nMNSMZvtwrvoEQ/mui8L/aiCLZRCj5t6L3yujKpcDhIPk7garp8tL4nMx2+oYsN0FWBacevJhazfXAbV1kfBzA==
     dependencies:
       "@prisma/engines" "3.15.1-1.461d6a05159055555eb7dfb337c9fb271cbd4d7e"
